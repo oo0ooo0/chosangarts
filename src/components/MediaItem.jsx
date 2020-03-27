@@ -14,7 +14,7 @@ const StyledMediaItem = styled.div`
   .item-info {
     .tags {
       display: flex;
-      /* justify-content: center; */
+      justify-content: center;
       margin-bottom: 10px;
       width: 100%;
       flex-wrap: wrap;
@@ -76,9 +76,9 @@ const MemoizeMediaItem = React.memo(function Item({ id, mediaList, text, tags, c
           width='500vw'
           height='300'
           src={mediaList[0].url}
-          frameborder='0'
-          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen
+          frameBorder='0'
+          allow='accelerometer; autoplay; '
+          allowFullscreen
         ></iframe>
       </figure>
       <div className='item-footer'>
