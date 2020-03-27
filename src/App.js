@@ -12,6 +12,7 @@ import { MainContainer } from './components/Containers';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './services/store';
+import { LightgalleryProvider } from 'react-lightgallery';
 
 function App() {
   return (
@@ -34,7 +35,16 @@ function App() {
           </Route>
 
           <Route path={'/add'} exact>
-            <Add />
+            <LightgalleryProvider
+              lightgallerySettings={
+                {
+                  // settings: https://sachinchoolur.github.io/lightgallery.js/docs/api.html
+                }
+              }
+              galleryClassName='my_custom_classname'
+            >
+              <Add />
+            </LightgalleryProvider>
           </Route>
 
           <Route path={'/work/:id'}>
