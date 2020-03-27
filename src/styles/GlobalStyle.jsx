@@ -71,6 +71,10 @@ h4 {
   font: normal 900 24px/34px 'Roboto Slab';
   color: #1d1e21;
 }
+h5 {
+  font: normal 900 20px/34px 'Roboto Slab';
+  color: #1d1e21;
+}
 
 p {
   font: normal 400 14px/22px 'Roboto Slab';
