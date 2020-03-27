@@ -43,7 +43,7 @@ const PhotoItem = ({ image, group }) => (
     </LightgalleryItem>
   </div>
 );
-function Add() {
+function Contact() {
   return (
     <StyledWorks>
       <LightgalleryProvider
@@ -68,4 +68,4 @@ function Add() {
   );
 }
 
-export default Add;
+export default Contact;

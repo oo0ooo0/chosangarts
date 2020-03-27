@@ -4,7 +4,7 @@ import Home from './Home';
 import Works from './Works';
 import About from './About';
 import Media from './Media';
-import Add from './Add';
+import Contact from './Contact';
 import Footer from './Footer';
 import GlobalStyle from './styles/GlobalStyle';
 import { MainContainer } from './components/Containers';
@@ -36,7 +36,7 @@ function App() {
             <Media />
           </Route>
 
-          <Route path={'/add'} exact>
+          <Route path={'/contact'} exact>
             <LightgalleryProvider
               lightgallerySettings={
                 {
@@ -45,7 +45,7 @@ function App() {
               }
               galleryClassName='my_custom_classname'
             >
-              <Add />
+              <Contact />
             </LightgalleryProvider>
           </Route>
         </MainContainer>
