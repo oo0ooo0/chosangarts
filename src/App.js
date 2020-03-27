@@ -1,10 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import Works from './Works';
-import WorkDetail from './components/WorkDetail';
 import About from './About';
 import Media from './Media';
-import MediaDetail from './components/MediaDetail';
 import Add from './Add';
 import Footer from './Footer';
 import GlobalStyle from './styles/GlobalStyle';
@@ -45,14 +43,6 @@ function App() {
             >
               <Add />
             </LightgalleryProvider>
-          </Route>
-
-          <Route path={'/work/:id'}>
-            <WorkDetail />
-          </Route>
-
-          <Route path={'/media/:id'}>
-            <MediaDetail />
           </Route>
         </MainContainer>
 
