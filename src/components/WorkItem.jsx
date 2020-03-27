@@ -29,7 +29,7 @@ const StyledItem = styled.div`
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      h4 {
+      h5 {
         margin-right: 10px;
       }
     }
@@ -87,11 +87,11 @@ const MemoizeWorkItem = React.memo(function Item({ id, mediaList, text, tags, cr
         </figure>
 
         <article className='item-info'>
-          <div className='tags'>
+          {/* <div className='tags'>
             {tags.map((tag, index) => {
-              return <h4 key={index}>{tag}</h4>;
+              return <h5 key={index}>{tag}</h5>;
             })}
-          </div>
+          </div> */}
           <FeedText className='item-text'>{text}</FeedText>
         </article>
       </Link>

@@ -18,7 +18,7 @@ const StyledWorks = styled.main`
   .my-masonry-grid_column > div {
     /* change div to reference your elements you put in <Masonry> */
     background: none;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 `;
 
