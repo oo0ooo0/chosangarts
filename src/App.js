@@ -15,6 +15,7 @@ import { LightgalleryProvider } from 'react-lightgallery';
 
 function App() {
   return (
+    // Push for share to Chosang
     <Provider store={store}>
       <BrowserRouter>
         <GlobalStyle />
