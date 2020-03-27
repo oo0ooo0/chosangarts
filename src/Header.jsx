@@ -96,13 +96,13 @@ function Header() {
                 <Link to={{ pathname: `/about` }}>ABOUT</Link>
               </li>
               <li>
-                <Link to={{ pathname: `/` }}>WORKS</Link>
+                <Link to={{ pathname: `/work` }}>WORKS</Link>
               </li>
               <li>
                 <Link to={{ pathname: `/media` }}>MEDIA</Link>
               </li>
               <li>
-                <Link to={{ pathname: `/add` }}>000</Link>
+                <Link to={{ pathname: `/contact` }}>CONTACT</Link>
               </li>
             </ul>
           </div>

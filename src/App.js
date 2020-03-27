@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Home from './Home';
 import Works from './Works';
 import About from './About';
 import Media from './Media';
@@ -18,13 +19,16 @@ function App() {
       <BrowserRouter>
         <GlobalStyle />
         <Header />
+        <Route path={'/'} exact>
+          <Home />
+        </Route>
 
         <MainContainer>
           <Route path={'/about'} exact>
             <About />
           </Route>
 
-          <Route path={'/'} exact>
+          <Route path={'/work'} exact>
             <Works />
           </Route>
 
