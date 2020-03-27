@@ -102,7 +102,7 @@ function Header() {
                 <Link to={{ pathname: `/media` }}>MEDIA</Link>
               </li>
               <li>
-                <Link to={{ pathname: `/000` }}>000</Link>
+                <Link to={{ pathname: `/add` }}>000</Link>
               </li>
             </ul>
           </div>
