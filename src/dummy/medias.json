@@ -1,0 +1,81 @@
+{
+  "status": 200,
+  "message": "Feed List 조회",
+  "data": {
+    "list": [
+      {
+        "id": 14,
+        "text": "",
+        "tags": ["차지위물화", "2017", "Cloning"],
+
+        "mediaList": [
+          {
+            "id": 1014,
+            "type": "video",
+            "url": "https://www.youtube.com/embed/wcfpolr7as0"
+          }
+        ],
+        "createdAt": "2017 차지위물화, 트렁크 갤러리"
+      },
+      {
+        "id": 13,
+        "text": "",
+        "tags": ["차지위물화", "2017", "Interactive Video Installation"],
+
+        "mediaList": [
+          {
+            "id": 1013,
+            "type": "image",
+            "url": "https://www.youtube.com/embed/9RRlOa1aLh0"
+          }
+        ],
+        "createdAt": "2017 차지위물화, 트렁크 갤러리"
+      },
+      {
+        "id": 12,
+        "text": "",
+        "tags": ["공기의간극", "​Air Gap", "2015", "Video Installation"],
+
+        "mediaList": [
+          {
+            "id": 1012,
+            "type": "image",
+            "url": "https://www.youtube.com/embed/VZ357vCroC8"
+          }
+        ],
+        "createdAt": "2015 공기의 간극, 유중아트센터 1갤러리(한국)"
+      },
+      {
+        "id": 11,
+        "text": "",
+        "tags": ["공기의간극", "​Air Gap", "2015", "InteractiveKinetic Art"],
+
+        "mediaList": [
+          {
+            "id": 1011,
+            "type": "image",
+            "url": "https://www.youtube.com/embed/EvnVcvuDq9Q"
+          }
+        ],
+        "createdAt": "2015 공기의 간극, 유중아트센터 1갤러리(한국)"
+      },
+      {
+        "id": 10,
+        "text": "",
+        "tags": ["공기의간극", "​Air Gap", "2015"],
+
+        "mediaList": [
+          {
+            "id": 1010,
+            "type": "image",
+            "url": "https://www.youtube.com/embed/jXre8mBq-os"
+          }
+        ],
+        "createdAt": "2015 공기의 간극, 유중아트센터 1갤러리(한국)"
+      }
+    ],
+    "totalListCount": 395,
+    "totalPages": 27,
+    "isNext": true
+  }
+}

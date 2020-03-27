@@ -1,0 +1,383 @@
+{
+  "status": 200,
+  "message": "Feed List 조회",
+  "data": {
+    "list": [
+      {
+        "id": 1001,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1001.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1002,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1002.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1003,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1003.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1004,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1004.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1005,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1005.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1006,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1006.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1007,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1007.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1008,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1008.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1009,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1009.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1010,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1010.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1011,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1011.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1012,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1012.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1013,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1013.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1014,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1014.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1015,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1015.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1016,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1016.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1017,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1017.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1018,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1018.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1019,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1019.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1020,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1020.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1021,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1021.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1022,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1022.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1023,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1023.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1024,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1024.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1025,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1025.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1026,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1026.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1027,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1027.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1028,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1028.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1029,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1029.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1030,
+        "text": "대상 A로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery MHK \n Mediaart & Painting & Installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1030.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      },
+      {
+        "id": 1031,
+        "text": "대상 a로서의 응시 2020.04.07-29 갤러리 MHK \n \n le regard comme objet a, gallery mhk \n mediaart & painting & installation",
+        "tags": ["전시명", "2020", "작품명"],
+        "mediaList": [
+          {
+            "type": "image",
+            "url": "img/1031.jpeg"
+          }
+        ],
+        "createdAt": "2020 대상 A로서의 응시, 갤러리 MHK "
+      }
+    ],
+    "totalListCount": 395,
+    "totalPages": 27,
+    "isNext": true
+  }
+}
