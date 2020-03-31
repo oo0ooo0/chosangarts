@@ -99,7 +99,7 @@ const MemoizeMediaItem = React.memo(function Item({ id, mediaList, text, tags, c
         </article>
         <figure className='item-image-wrap'>
           <iframe
-            src={mediaList[0].url + 'showinfo=0'}
+            src={mediaList[0].url}
             width='100%'
             height='100%'
             frameBorder='0'
