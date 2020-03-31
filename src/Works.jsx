@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import WorkItem from './components/WorkItem';
 import Masonry from 'react-masonry-css';
 import { useSelector } from 'react-redux';
-// import { checkWidth } from './utils/common';
+import { calcColumn } from './utils/common';
 
 const StyledWorks = styled.main`
   .my-masonry-grid {
@@ -22,16 +22,6 @@ const StyledWorks = styled.main`
     margin-bottom: 100px;
   }
 `;
-
-function calcColumn() {
-  if (window.innerWidth < 600) {
-    return 1;
-  } else if (window.innerWidth < 1024) {
-    return 2;
-  } else {
-    return 3;
-  }
-}
 
 function Works() {
   const works = useSelector(state => state.works);
