@@ -76,7 +76,7 @@ function About() {
 
       <main>
         <div className='imageWrap'>
-          <img src='/img/about.webp' />
+          <img src='/img/about.jpg' />
         </div>
 
         <div className='textWrap'>
