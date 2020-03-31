@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import WorkItem from './components/WorkItem';
 import Masonry from 'react-masonry-css';
 import { useSelector } from 'react-redux';
+// import { checkWidth } from './utils/common';
 
 const StyledWorks = styled.main`
   .my-masonry-grid {
@@ -22,14 +23,38 @@ const StyledWorks = styled.main`
   }
 `;
 
+function calcColumn() {
+  if (window.innerWidth < 600) {
+    return 1;
+  } else if (window.innerWidth < 1024) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
+
 function Works() {
   const works = useSelector(state => state.works);
+  const [columnNum, setColumnNum] = useState(calcColumn);
+  function resizeHandler() {
+    setColumnNum(calcColumn());
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resizeHandler);
+    return () => {
+      window.removeEventListener('resize', resizeHandler);
+    };
+  }, []);
+
+  // console.log('columNum', columNum);
+
   return (
     <StyledWorks>
       <h2 className='title'>Work</h2>
       <h3>Artist Chosang's works.</h3>
       <Masonry
-        breakpointCols={3}
+        breakpointCols={columnNum}
         className='my-masonry-grid'
         columnClassName='my-masonry-grid_column'
       >

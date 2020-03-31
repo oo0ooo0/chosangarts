@@ -2,8 +2,30 @@ export function createTitle(text) {
   if (text) {
     const sentences = text.split('\n');
     if (sentences.length > 1) {
-      return `${sentences[0]} ${sentences[1]}`.trim();
+      return `${sentences[0]}`.trim();
     }
   }
+  return '';
+}
+
+export function createInfo(text) {
+  if (text) {
+    const sentences = text.split('\n');
+    if (sentences.length > 1) {
+      return `${(sentences[1], sentences[2])}`.trim();
+    }
+  }
+  return '';
+}
+
+export function calcColumn() {
+  if (window.innerWidth < 600) {
+    return 1;
+  } else if (window.innerWidth < 1024) {
+    return 2;
+  } else {
+    return 3;
+  }
+
   return '';
 }
