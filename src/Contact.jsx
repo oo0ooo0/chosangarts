@@ -5,14 +5,98 @@ import 'lightgallery.js/dist/css/lightgallery.css';
 
 import { LightgalleryProvider, LightgalleryItem } from 'react-lightgallery';
 
-const StyledWorks = styled.main`
+const StyledContact = styled.main`
+  .myform {
+    margin: 0 auto;
+    width: 509px;
+    padding: 14px;
+  }
+  #form-wrapper {
+    background: none repeat scroll 0 0 #c6c6c6;
+    border: 2px solid #8b8b8b;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -op-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+  #form-wrapper h1 {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  #form-wrapper p {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #7e7e7e;
+    padding-bottom: 10px;
+  }
+  #form-wrapper label {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    width: 193px;
+    float: left;
+  }
+  #form-wrapper .small {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    width: 193px;
+  }
+  #form-wrapper input,
+  #form-wrapper textarea {
+    float: left;
+    border: solid 1px #aacfe4;
+    width: 284px;
+    margin: 2px 0 20px 10px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -op-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    font-size: 14px;
+  }
+
+  #form-wrapper input {
+    height: 25px;
+    padding: 4px 10px;
+  }
+  #form-wrapper textarea {
+    padding: 10px 10px;
+    overflow: auto;
+  }
+  /* ----------- Form Button ----------- */
+  #form-wrapper button {
+    background: #2c3e4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#919496), to(#2c3e4a));
+    background: -webkit-linear-gradient(top, #919496, #2c3e4a);
+    background: -moz-linear-gradient(top, #919496, #2c3e4a);
+    background: -ms-linear-gradient(top, #919496, #2c3e4a);
+    background: -o-linear-gradient(top, #919496, #2c3e4a);
+    padding: 5px 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-left: 315px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  #form-wrapper button:hover {
+    background: #3d4b54;
+    color: #ccc;
+  }
+
+  /* 
   .workTitle {
     text-align: center;
   }
   .imageWrap {
     display: flex;
     align-items: center;
-  }
+  } */
 `;
 
 const GROUP1 = [
@@ -45,8 +129,53 @@ const PhotoItem = ({ image, group }) => (
 );
 function Contact() {
   return (
-    <StyledWorks>
-      <LightgalleryProvider
+    <StyledContact>
+      <div id='form-wrapper' className='myform'>
+        <form id='form' name='form' method='post' action='index.html'>
+          <h1>Contact </h1>
+          <p>Please complete the form bellow.</p>
+
+          <label for='name'>
+            Name
+            <span className='small'>Add your name</span>
+          </label>
+          <input type='text' name='name' placeholder='Name' id='name' />
+
+          <label for='email'>
+            Email
+            <span className='small'>Add a valid address</span>
+          </label>
+          <input type='text' name='email' placeholder='Email' id='email' />
+
+          <label for='phone'>
+            Phone
+            <span className='small'>Add your mobile no.</span>
+          </label>
+          <input type='text' name='phone' placeholder='Phone' id='phone' />
+
+          <label for='web'>
+            Web-site
+            <span className='small'>Add your web-site url</span>
+          </label>
+          <input id='web' type='text' placeholder='Web-site' name='web' id='web' />
+
+          <label for='message'>
+            Message
+            <span className='small'>Write something to me</span>
+          </label>
+          <textarea
+            placeholder='Write something to us'
+            name='message'
+            id='message'
+            rows='5'
+          ></textarea>
+
+          <button type='submit'>Send</button>
+          <div className='spacer'></div>
+        </form>
+      </div>
+
+      {/* <LightgalleryProvider
         onAfterSlide={() => {
           console.log('onAfterSlide');
         }}
@@ -63,8 +192,8 @@ function Contact() {
             <PhotoItem key={idx} image={p} group='group2' />
           ))}
         </div>
-      </LightgalleryProvider>
-    </StyledWorks>
+      </LightgalleryProvider> */}
+    </StyledContact>
   );
 }
 
