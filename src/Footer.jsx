@@ -28,7 +28,7 @@ function Footer() {
           <div className='address'>
             <p>
               <a href='https://www.facebook.com/profile.php?id=100012313273765'> SNS Facebook |</a>
-              <a href='mailTo:chosangw@gmail.com'> E-mail chosangw@gmail.com</a>
+              <a href='mailTo:cswart@never.com'> E-mail cswart@never.com</a>
             </p>
           </div>
           <div className='builtBy'>design & built by. KWONJAMIN</div>
