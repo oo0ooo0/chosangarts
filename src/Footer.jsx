@@ -4,15 +4,17 @@ import { LayoutContainer } from './components/Containers';
 
 const StyledFooter = styled.footer`
   border-top: 1px solid lightGray;
-  padding: 20px 0px;
+  padding: 1.5px 0px;
   color: gray;
   .footer {
-    a {
-      color: gray;
-    }
     > div {
-      margin-top: 5px;
       text-align: center;
+    }
+
+    div,
+    a {
+      font-size: 10px;
+      color: gray;
     }
   }
 `;

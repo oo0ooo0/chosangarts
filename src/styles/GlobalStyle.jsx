@@ -35,6 +35,7 @@ text,
 figure {
   margin: 0;
   padding: 0;
+  word-break: keep-all;
 }
 
 * {
@@ -51,14 +52,14 @@ a:hover {
   color: #1d1e21;
 }
 
-/* title reset  */
+/* text reset  */
 h1 {
-  font: normal 900 48px/48px 'Roboto Slab';
+  font: normal 900 35px/1.2 'Roboto Slab';
   color: #1d1e21;
 }
 
 h2 {
-  font: normal 900 32px/48px 'Roboto Slab';
+  font: normal 900 30px/1.2 'Roboto Slab';
   color: #1d1e21;
 }
 
@@ -68,7 +69,7 @@ h3 {
 }
 
 h4 {
-  font: normal 900 24px/34px 'Roboto Slab';
+  font: normal 900 25px/1.1   'Roboto Slab';
   color: #1d1e21;
 }
 h5 {
@@ -77,13 +78,13 @@ h5 {
 }
 
 p {
-  font: normal 400 14px/22px 'Roboto Slab';
+  font: normal 400 10px 'Roboto Slab';
   color: #1d1e21;
 }
 
 /* font reset */
 body {
-  font: normal 400 12px/1.5 'Roboto Slab';
+  font: normal 400 10px/1.5 'Roboto Slab';
 }
 
 /* font style reset */
@@ -191,6 +192,7 @@ button {
   clear: both;
   display: block;
 }
+
 `;
 
 export default GlobalStyle;

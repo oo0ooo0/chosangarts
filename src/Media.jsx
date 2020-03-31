@@ -32,7 +32,7 @@ function Media() {
       <h2 className='title'>Media</h2>
       <h3 className='pageInfo'>Artist Chosang's works.</h3>
       <Masonry
-        breakpointCols={2}
+        breakpointCols={1}
         className='my-masonry-grid'
         columnClassName='my-masonry-grid_column'
       >

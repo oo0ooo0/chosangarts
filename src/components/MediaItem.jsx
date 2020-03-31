@@ -4,57 +4,82 @@ import styled from 'styled-components';
 import FeedText from './FeedText';
 
 const StyledMediaItem = styled.div`
-  text-align: center;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  .itemWrap {
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: center;
 
-  .item-image-wrap {
-  }
-
-  .item-info {
-    .tags {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 10px;
+    figure {
+      position: relative;
       width: 100%;
-      flex-wrap: wrap;
-      h4 {
-        margin: 10px 5px;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
       }
     }
-    ${FeedText} {
-      max-height: 263px;
+
+    .item-info {
+      margin: 2vw 0;
+      text-align: center;
+
+      .tags {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        h4 {
+        }
+      }
+      ${FeedText} {
+        max-height: 263px;
+      }
     }
-  }
 
-  .item-footer {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #999;
-
-    ul {
+    .item-footer {
+      padding: 1vw 0vw;
       display: flex;
-      li {
-        margin-left: 10px;
-        i {
-          margin-right: 5px;
-        }
-        a {
-          color: #999;
+      justify-content: space-between;
+      font-size: 1vw;
+      width: 100%;
+      color: #999;
+
+      ul {
+        display: flex;
+        li {
+          margin-left: 10px;
+          i {
+            margin-right: 5px;
+          }
+          a {
+            color: #999;
+          }
         }
       }
-    }
-    .item-date {
-      font-style: italic;
+      .item-date {
+        font-style: italic;
+      }
     }
   }
-  @media (max-width: 960px) {
-    /* item */
-
-    .item-date.info .tags h4 {
-      font-size: 2.4vw;
+  @media (max-width: 1024px) {
+    .itemWrap {
+      width: 70%;
+    }
+  }
+  @media (max-width: 768px) {
+    .itemWrap {
+      width: 100%;
+    }
+    .item-info .tags h4 {
     }
   }
 `;
@@ -63,44 +88,46 @@ const MemoizeMediaItem = React.memo(function Item({ id, mediaList, text, tags, c
   const shareUrl = encodeURIComponent(`https://icd-lovat.now.sh/feed/${id}`);
   return (
     <StyledMediaItem>
-      <article className='item-info'>
-        <div className='tags'>
-          {tags.map((tag, index) => {
-            return <h4 key={index}>{tag}</h4>;
-          })}
-        </div>
-        <FeedText className='item-text'>{text}</FeedText>
-      </article>
-      <figure className='item-image-wrap'>
-        <iframe
-          width='500vw'
-          height='300'
-          src={mediaList[0].url}
-          frameBorder='0'
-          allow='accelerometer; autoplay; '
-          allowFullscreen
-        ></iframe>
-      </figure>
-      <div className='item-footer'>
-        <em className='item-date'>{createdAt}</em>
-        <ul>
-          <li>
-            <div
-              data-href={`https://icd-lovat.now.sh/media/${id}`}
-              data-layout='button_count'
-              data-size='small'
-            >
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}%2F&amp;src=sdkpreparse`}
-                className='fb-xfbml-parse-ignore'
+      <div className='itemWrap'>
+        <article className='item-info'>
+          <div className='tags'>
+            {tags.map((tag, index) => {
+              return <h4 key={index}>{tag}&ensp;</h4>;
+            })}
+          </div>
+          <FeedText className='item-text'>{text}</FeedText>
+        </article>
+        <figure className='item-image-wrap'>
+          <iframe
+            src={mediaList[0].url + 'showinfo=0'}
+            width='100%'
+            height='100%'
+            frameBorder='0'
+            allow='accelerometer; autoplay; '
+            allowFullScreen
+          ></iframe>
+        </figure>
+        <div className='item-footer'>
+          <em className='item-date'>{createdAt}</em>
+          <ul>
+            <li>
+              <div
+                data-href={`https://icd-lovat.now.sh/media/${id}`}
+                data-layout='button_count'
+                data-size='small'
               >
-                <i className='fab fa-facebook-square'></i>
-              </a>
-            </div>
-          </li>
-        </ul>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}%2F&amp;src=sdkpreparse`}
+                  className='fb-xfbml-parse-ignore'
+                >
+                  <i className='fab fa-facebook-square'></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </StyledMediaItem>
   );

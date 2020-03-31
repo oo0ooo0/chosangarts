@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import FeedText from './FeedText';
+import { createTitle, createInfo } from '../utils/common';
 
 const StyledItem = styled.div`
   .item-image-wrap {
@@ -9,20 +10,7 @@ const StyledItem = styled.div`
       width: 100%;
     }
   }
-  .item-md {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    .item-md-image {
-      padding-top: 10px;
-      margin-right: 10px;
-      height: 70px;
-    }
-    .item-md-name {
-      font-size: 20px;
-      line-height: 60px;
-    }
-  }
+
   .item-info {
     .tags {
       margin-bottom: 10px;
@@ -42,7 +30,7 @@ const StyledItem = styled.div`
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 2vw;
     color: #999;
 
     ul {
@@ -58,7 +46,7 @@ const StyledItem = styled.div`
       }
     }
     .item-date {
-      font-style: italic;
+      font-style: normal;
     }
   }
   @media (max-width: 960px) {
@@ -71,7 +59,7 @@ const StyledItem = styled.div`
         font-size: 2vw;
       }
     }
-    .item-date.info .tags h4 {
+    .item-info .item-text {
       font-size: 2.4vw;
     }
   }
@@ -87,11 +75,7 @@ const MemoizeWorkItem = React.memo(function Item({ id, mediaList, text, tags, cr
         </figure>
 
         <article className='item-info'>
-          {/* <div className='tags'>
-            {tags.map((tag, index) => {
-              return <h5 key={index}>{tag}</h5>;
-            })}
-          </div> */}
+          <div className='title'>{createTitle(text)}</div>
           <FeedText className='item-text'>{text}</FeedText>
         </article>
       </Link>
