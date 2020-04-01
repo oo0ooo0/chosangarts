@@ -38,8 +38,8 @@ function Home() {
         Gallery MHK 2020.04.07~29
       </h3>
       <div className='imageWrap'>
-        <img src='/img/objectA-1.jpeg' />
-        <img src='/img/objectA-2.jpeg' />
+        <img src='/img/objectA-1.jpeg' alt='대상성 없는 대상성 팜플렛 이미지' />
+        <img src='/img/objectA-2.jpeg' alt='대상성 없는 대상성 팜플렛 이미지' />
       </div>
     </StyledAbout>
   );

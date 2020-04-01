@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import FeedText from './FeedText';
-import { createTitle, createInfo } from '../utils/common';
 import 'lightgallery.js/dist/css/lightgallery.css';
 import { LightgalleryProvider, LightgalleryItem } from 'react-lightgallery';
 
@@ -74,13 +73,12 @@ const StyledItem = styled.div`
 const PhotoItem = ({ image, group }) => (
   <div>
     <LightgalleryItem group={group} src={image}>
-      <img className='item-image' src={image} style={{ width: '100%' }} />
+      <img className='item-image' src={image} style={{ width: '100%' }} alt='작품이미지' />
     </LightgalleryItem>
   </div>
 );
 
 const MemoizeWorkItem = React.memo(function Item({ id, mediaList, text, tags, createdAt }) {
-  const shareUrl = encodeURIComponent(`https://icd-lovat.now.sh/feed/${id}`);
   return (
     <StyledItem>
       <LightgalleryProvider

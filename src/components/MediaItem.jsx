@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import FeedText from './FeedText';
 
@@ -99,6 +98,7 @@ const MemoizeMediaItem = React.memo(function Item({ id, mediaList, text, tags, c
         </article>
         <figure className='item-image-wrap'>
           <iframe
+            title='작품 영상'
             src={mediaList[0].url}
             width='100%'
             height='100%'

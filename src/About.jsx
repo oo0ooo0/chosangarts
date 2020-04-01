@@ -1,23 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { useSelector } from 'react-redux';
 
 const StyledAbout = styled.main`
   .name {
     font-size: 25px;
   }
   main {
-    /* background: center no-repeat url('/img/about-bg.webp'), #eee 40%; */
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    /* background: rgba(0, 0, 0, 0.1); */
     padding: 20px 0px;
   }
   .imageWrap {
     text-align: center;
     width: 40%;
-    /* background: rgba(0, 0, 0, 0.1); */
     img {
       width: 100%;
     }
@@ -28,7 +24,6 @@ const StyledAbout = styled.main`
     border-top: 1px solid lightGray;
     border-bottom: 1px solid lightGray;
     padding: 20px;
-    /* background: rgba(0, 0, 0, 0.1); */
     h3 {
       font-size: 40px;
       margin-bottom: 40px;
@@ -69,14 +64,13 @@ const StyledAbout = styled.main`
 `;
 
 function About() {
-  // const about = useSelector(state => state.about);
   return (
     <StyledAbout>
       <h2 className='title'>About</h2>
 
       <main>
         <div className='imageWrap'>
-          <img src='/img/about.jpg' />
+          <img src='/img/about.jpg' alt='조상작가 이미지' />
         </div>
 
         <div className='textWrap'>

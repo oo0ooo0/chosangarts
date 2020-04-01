@@ -20,12 +20,10 @@ export function createInfo(text) {
 
 export function calcColumn() {
   if (window.innerWidth < 600) {
-    return 1;
-  } else if (window.innerWidth < 1024) {
     return 2;
-  } else {
+  } else if (window.innerWidth < 1024) {
     return 3;
+  } else {
+    return 4;
   }
-
-  return '';
 }
