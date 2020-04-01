@@ -5,13 +5,15 @@ import Works from './Works';
 import About from './About';
 import Media from './Media';
 import Contact from './Contact';
+import Aa from './Aa';
 import Footer from './Footer';
 import GlobalStyle from './styles/GlobalStyle';
 import { MainContainer } from './components/Containers';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './services/store';
 import { LightgalleryProvider } from 'react-lightgallery';
+
+import store from './services/store';
 
 function App() {
   return (
@@ -38,6 +40,10 @@ function App() {
           </Route>
 
           <Route path={'/contact'} exact>
+            <Contact />
+          </Route>
+
+          <Route path={'/aa'} exact>
             <LightgalleryProvider
               lightgallerySettings={
                 {
@@ -46,7 +52,7 @@ function App() {
               }
               galleryClassName='my_custom_classname'
             >
-              <Contact />
+              <Aa />
             </LightgalleryProvider>
           </Route>
         </MainContainer>
