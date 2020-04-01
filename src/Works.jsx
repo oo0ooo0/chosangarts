@@ -8,18 +8,17 @@ import { calcColumn } from './utils/common';
 const StyledWorks = styled.main`
   .my-masonry-grid {
     display: flex;
-    margin-left: -30px; /* gutter size offset */
+    margin-left: -5px; /* gutter size offset */
     width: auto;
   }
   .my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
+    padding-left: 5px; /* gutter size */
     background-clip: padding-box;
-  }
-
-  .my-masonry-grid_column > div {
-    /* change div to reference your elements you put in <Masonry> */
-    background: none;
-    margin-bottom: 100px;
+    > div {
+      /* change div to reference your elements you put in <Masonry> */
+      background: none;
+      margin-bottom: 5px;
+    }
   }
 `;
 
@@ -36,8 +35,6 @@ function Works() {
       window.removeEventListener('resize', resizeHandler);
     };
   }, []);
-
-  // console.log('columNum', columNum);
 
   return (
     <StyledWorks>

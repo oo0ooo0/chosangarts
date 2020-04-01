@@ -1,13 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import FeedText from './FeedText';
 import { createTitle, createInfo } from '../utils/common';
+import 'lightgallery.js/dist/css/lightgallery.css';
+import { LightgalleryProvider, LightgalleryItem } from 'react-lightgallery';
 
 const StyledItem = styled.div`
   .item-image-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-height: 300px;
     .item-image {
       width: 100%;
+      height: 100%;
     }
   }
 
@@ -65,41 +71,53 @@ const StyledItem = styled.div`
   }
 `;
 
+const PhotoItem = ({ image, group }) => (
+  <div>
+    <LightgalleryItem group={group} src={image}>
+      <img className='item-image' src={image} style={{ width: '100%' }} />
+    </LightgalleryItem>
+  </div>
+);
+
 const MemoizeWorkItem = React.memo(function Item({ id, mediaList, text, tags, createdAt }) {
   const shareUrl = encodeURIComponent(`https://icd-lovat.now.sh/feed/${id}`);
   return (
     <StyledItem>
-      <Link to={{ pathname: `/work/${id}` }}>
+      <LightgalleryProvider
+        onAfterSlide={() => {
+          console.log('onAfterSlide');
+        }}
+      >
         <figure className='item-image-wrap'>
-          <img src={mediaList[0].url} className='item-image' alt='피드 대표이미지' />
+          <PhotoItem image={mediaList[0].url} group='objetA' />
         </figure>
 
-        <article className='item-info'>
+        {/* <article className='item-info'>
           <div className='title'>{createTitle(text)}</div>
           <FeedText className='item-text'>{text}</FeedText>
         </article>
-      </Link>
-      <div className='item-footer'>
-        <em className='item-date'>{createdAt}</em>
-        <ul>
-          <li>
-            <div
-              data-href={`https://icd-lovat.now.sh/feed/${id}`}
-              data-layout='button_count'
-              data-size='small'
-            >
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}%2F&amp;src=sdkpreparse`}
-                className='fb-xfbml-parse-ignore'
+        <div className='item-footer'>
+          <em className='item-date'>{createdAt}</em>
+          <ul>
+            <li>
+              <div
+                data-href={`https://icd-lovat.now.sh/feed/${id}`}
+                data-layout='button_count'
+                data-size='small'
               >
-                <i className='fab fa-facebook-square'></i>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}%2F&amp;src=sdkpreparse`}
+                  className='fb-xfbml-parse-ignore'
+                >
+                  <i className='fab fa-facebook-square'></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div> */}
+      </LightgalleryProvider>
     </StyledItem>
   );
 });

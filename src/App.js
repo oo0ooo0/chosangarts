@@ -5,7 +5,6 @@ import Works from './Works';
 import About from './About';
 import Media from './Media';
 import Contact from './Contact';
-import Aa from './Aa';
 import Footer from './Footer';
 import GlobalStyle from './styles/GlobalStyle';
 import { MainContainer } from './components/Containers';
@@ -17,7 +16,6 @@ import store from './services/store';
 
 function App() {
   return (
-    // Push for share to Chosang
     <Provider store={store}>
       <BrowserRouter>
         <GlobalStyle />
@@ -32,18 +30,6 @@ function App() {
           </Route>
 
           <Route path={'/work'} exact>
-            <Works />
-          </Route>
-
-          <Route path={'/media'} exact>
-            <Media />
-          </Route>
-
-          <Route path={'/contact'} exact>
-            <Contact />
-          </Route>
-
-          <Route path={'/aa'} exact>
             <LightgalleryProvider
               lightgallerySettings={
                 {
@@ -52,8 +38,16 @@ function App() {
               }
               galleryClassName='my_custom_classname'
             >
-              <Aa />
+              <Works />
             </LightgalleryProvider>
+          </Route>
+
+          <Route path={'/media'} exact>
+            <Media />
+          </Route>
+
+          <Route path={'/contact'} exact>
+            <Contact />
           </Route>
         </MainContainer>
 
